@@ -13,6 +13,7 @@ const formattedTimeParts = new Intl.DateTimeFormat(
   options,
 ).formatToParts(currentTime);
 
+// If I want to set the options in different parts of the string 
 const weekday = formattedTimeParts.find((p) => p.type === "weekday").value;
 const month = formattedTimeParts.find((p) => p.type === "month").value;
 const day = formattedTimeParts.find((p) => p.type === "day").value;
