@@ -4,6 +4,7 @@ const options = {
   month: "short", // month is month
   day: "numeric", // this is the date
   dayPeriod: "narrow",
+  year: "numeric", // gives 2026
 };
 
 const currentTime = Date.now();
